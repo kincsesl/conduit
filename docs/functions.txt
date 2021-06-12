@@ -1,0 +1,10 @@
+TC 1	Regisztráció	Az elvárt adatokkal regisztrálunk	Az egyes mezőkbe érvényes értékeket írunk
+TC 2	Belépés	Belépés regisztrált felhasználóként	Létező adatokkal belépünk
+TC 3	Beállítások	Beállítások szerkesztése	A beállításoknál egy távoli kép URL-jét adom meg.
+TC 4	A nyitóoldal elérhetősége	A New Article menüből	A nyitóoldal elérhető a New Article menüből
+TC 5	Új cikk elhelyezése	Cikk létrehozása, megtekintése	Létrehozható a cikk és utána megtekinthető
+TC 6	Cikk véleményezése	A cikk melletti szívecskés gombra kattintok	A cikk véleményezhető, és a vélemény megjelenik.
+TC 7	Népszerű tegek	Cikk létrehozása után az új teg megjelenik a népszterű tegek között	A népszerű tegek vizsgálata
+TC 8	Saját cikkek	A Your Feed menü alatt megjelennek a cikkeim	A Your Feed menüpont vizsgálata
+TC 9	Logout	Kiléptetés 	A kiléptetés vizsgálata
+TC 10	Logout után visszalépés	Kiléptetés után a böngésző "előző oldal" gombjának használata	Kilépés után ne lehessen a "vissza" gombbal jelszóval védett tartalmakat elérni.
