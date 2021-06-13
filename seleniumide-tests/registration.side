@@ -256,7 +256,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["cd13b779-f647-4856-9c87-e10499fff6cd"]
+    "tests": ["cd13b779-f647-4856-9c87-e10499fff6cd", "431eabf2-2ef2-410d-ba52-be1360e72510"]
   }],
   "urls": ["http://localhost:1667/", "http://localhost:1667/#/"],
   "plugins": []
