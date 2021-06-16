@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2           
     - name: install Nodejs
       uses: actions/setup-node@v2
       with:
@@ -29,10 +29,9 @@ jobs:
     - name: Install chromedriver
       run: |
         seleniumbase install chromedriver
-    - name: Run Tests
-      run: |
-        selenium-side-runner project.side --alluredir=allure-results
-
+     - name: Run Tests
+        run: |
+          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" test.side
     - name: Get Allure history
       uses: actions/checkout@v2
       if: always()
