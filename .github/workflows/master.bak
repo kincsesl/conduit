@@ -14,7 +14,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:      
+    steps:
+      - name: Builds and Starts
+        run: |
+          docker-compose up -d
       - uses: actions/checkout@v2      
       - name: install Nodejs
         uses: actions/setup-node@v2
