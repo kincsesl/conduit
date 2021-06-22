@@ -39,19 +39,3 @@ jobs:
         run: |
           docker-compose up -d
           docker exec realworld_drash deno test -A --unstable tests/unit/models/base_model_test.ts
-
-  linter:
-      # Only one OS is required since fmt is cross platform
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Install Deno
-        uses: denolib/setup-deno@master
-
-      - name: Formatter
-        run: deno fmt --check --unstable --ignore='src/public,src/vue,src/package.json,src/webpack.config.js'
-
-      - name: Linter
-        run: deno lint --unstable --ignore='src/public,src/vue,src/package.json,src/webpack.config.js'
