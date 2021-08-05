@@ -35,10 +35,12 @@ jobs:
           sudo apt install google-chrome-stable
       - name: Install seleniumbase
         run: pip install seleniumbase
-      - name: Install chromedriver
+
+        name: Install chromedriver
         run: |
           seleniumbase install chromedriver
-      - name: Run Tests
+
+        name: Run Tests
         run: |
          selenium-side-runner -c "browserName=chrome goog:chromeOptions.args=[disable-infobars, headless]" post.side
       - name: Run Unit Tests
