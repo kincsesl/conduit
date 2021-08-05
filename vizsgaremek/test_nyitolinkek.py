@@ -45,6 +45,7 @@ nyitolap = Nyitolap()
 def test_1():
     nyitolap.setup()
     assert nyitolap.test_cookies(2)  # Elfogadja a Cookie-kat.
+    time.sleep(2)
     assert nyitolap.test_nincs_cookigomb()  # Ha elfogadtam, már nincs Cookie-gomb.
     nyitolap.driver.close()
 
