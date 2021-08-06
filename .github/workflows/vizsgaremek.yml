@@ -27,10 +27,14 @@ jobs:
       run: |
         sudo apt install google-chrome-stable
 
+    - name: Install pytest
+      run: |
+        pip install pytest
+
     - run: docker-compose up -d
 
     - name: Sleep for 75 seconds
-      run: sleep 175s
+      run: sleep 75s
       shell: bash
 
     - name: Test with pytest
