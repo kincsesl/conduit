@@ -7,6 +7,7 @@ Sikeres regisztráció:
 """
 
 # mindenütt érvényes elemek:
+vv = 5
 cookies_accept = "/html/body/div/footer/div/div/div/div[2]/button[2]/div"  # xpath
 cookies_declin = "/html/body/div/footer/div/div/div/div[1]/button[2]/div"
 nav_linkek = "nav-link"  # Az elemek class tulajdonsága.
