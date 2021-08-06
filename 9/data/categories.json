@@ -1,0 +1,95 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: Process unexpectedly closed with status 1",
+      "children" : [ {
+        "name" : "test_login1",
+        "uid" : "549a251f210a980f",
+        "parentUid" : "359adc3b20c3cd6e289fa31b85222924",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628239416601,
+          "stop" : 1628239416601,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login2",
+        "uid" : "ed34d36cf04d4ba7",
+        "parentUid" : "359adc3b20c3cd6e289fa31b85222924",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628239419605,
+          "stop" : 1628239419605,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_regteszt1",
+        "uid" : "46408b75be5a2036",
+        "parentUid" : "359adc3b20c3cd6e289fa31b85222924",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628239423326,
+          "stop" : 1628239423326,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_regteszt2",
+        "uid" : "66b26b3e4c4a359f",
+        "parentUid" : "359adc3b20c3cd6e289fa31b85222924",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628239424475,
+          "stop" : 1628239424475,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "359adc3b20c3cd6e289fa31b85222924"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "children" : [ {
+        "name" : "test_post1",
+        "uid" : "f368a4c6e4ae396",
+        "parentUid" : "e4a7d37349393b5a9e33d7e741170037",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628239419751,
+          "stop" : 1628239419751,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_post2",
+        "uid" : "f1bf9f20d47e8c6a",
+        "parentUid" : "e4a7d37349393b5a9e33d7e741170037",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628239422168,
+          "stop" : 1628239422168,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e4a7d37349393b5a9e33d7e741170037"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

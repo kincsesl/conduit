@@ -1,0 +1,222 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "testproject",
+    "children" : [ {
+      "name" : "test_loginok",
+      "children" : [ {
+        "name" : "TestLoginok",
+        "children" : [ {
+          "name" : "test_login1",
+          "uid" : "549a251f210a980f",
+          "parentUid" : "5698229b78d5d01129502aacc498c5e4",
+          "status" : "broken",
+          "time" : {
+            "start" : 1628239416601,
+            "stop" : 1628239416601,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_login2",
+          "uid" : "ed34d36cf04d4ba7",
+          "parentUid" : "5698229b78d5d01129502aacc498c5e4",
+          "status" : "broken",
+          "time" : {
+            "start" : 1628239419605,
+            "stop" : 1628239419605,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5698229b78d5d01129502aacc498c5e4"
+      } ],
+      "uid" : "a420b40072fa546fdab625839e499e18"
+    }, {
+      "name" : "test_posztok",
+      "children" : [ {
+        "name" : "TestPosztok",
+        "children" : [ {
+          "name" : "test_post1",
+          "uid" : "f368a4c6e4ae396",
+          "parentUid" : "6121bd067e9dc09278ad1f5ecd339d34",
+          "status" : "broken",
+          "time" : {
+            "start" : 1628239419751,
+            "stop" : 1628239419751,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_post2",
+          "uid" : "f1bf9f20d47e8c6a",
+          "parentUid" : "6121bd067e9dc09278ad1f5ecd339d34",
+          "status" : "broken",
+          "time" : {
+            "start" : 1628239422168,
+            "stop" : 1628239422168,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6121bd067e9dc09278ad1f5ecd339d34"
+      } ],
+      "uid" : "bb4bd45b97539818910ded2e9072240d"
+    }, {
+      "name" : "test_regteszt1",
+      "children" : [ {
+        "name" : "TestRegteszt1",
+        "children" : [ {
+          "name" : "test_regteszt1",
+          "uid" : "46408b75be5a2036",
+          "parentUid" : "eb6f37c94b24001b24d783949520e049",
+          "status" : "broken",
+          "time" : {
+            "start" : 1628239423326,
+            "stop" : 1628239423326,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "eb6f37c94b24001b24d783949520e049"
+      } ],
+      "uid" : "5139350ea3a1a0482c9a13f8b974bc91"
+    }, {
+      "name" : "test_regteszt2",
+      "children" : [ {
+        "name" : "TestRegteszt2",
+        "children" : [ {
+          "name" : "test_regteszt2",
+          "uid" : "66b26b3e4c4a359f",
+          "parentUid" : "595e3a1c5912041fcc5c81a03993a38a",
+          "status" : "broken",
+          "time" : {
+            "start" : 1628239424475,
+            "stop" : 1628239424475,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "595e3a1c5912041fcc5c81a03993a38a"
+      } ],
+      "uid" : "128f5419f15d3f26e66f2b8790f18fd9"
+    } ],
+    "uid" : "6aa08bfe2a13391195b08fb6547eb0ba"
+  }, {
+    "name" : "vizsgaremek",
+    "children" : [ {
+      "name" : "test_nyitolinkek",
+      "children" : [ {
+        "name" : "test_1",
+        "uid" : "933764e466293c05",
+        "parentUid" : "3f8b6be18caf214f509e24320b288dc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628239424623,
+          "stop" : 1628239432036,
+          "duration" : 7413
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_3",
+        "uid" : "1d7bdb8ab4d46ac9",
+        "parentUid" : "3f8b6be18caf214f509e24320b288dc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628239432039,
+          "stop" : 1628239448804,
+          "duration" : 16765
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3f8b6be18caf214f509e24320b288dc1"
+    }, {
+      "name" : "test_signup_rosszak",
+      "children" : [ {
+        "name" : "test_rossz_mezok01",
+        "uid" : "4d42a475a4a48209",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628239448807,
+          "stop" : 1628239455428,
+          "duration" : 6621
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_rossz_mezok02",
+        "uid" : "87d6c524ea6f4703",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628239455430,
+          "stop" : 1628239462140,
+          "duration" : 6710
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_rossz_mezok03",
+        "uid" : "634cb99cbb700b3",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628239462143,
+          "stop" : 1628239468950,
+          "duration" : 6807
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_rossz_mezok04",
+        "uid" : "e9f8f591c1475baf",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628239468952,
+          "stop" : 1628239475724,
+          "duration" : 6772
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_rossz_mezok05",
+        "uid" : "9e4d83909ca75ede",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628239475727,
+          "stop" : 1628239482503,
+          "duration" : 6776
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f9dd2fba1a68c63f56e1fb846bf8b022"
+    } ],
+    "uid" : "cbd10818b8e0140de597780ddf104a7d"
+  } ],
+  "name" : "suites"
+}
