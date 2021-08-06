@@ -113,8 +113,8 @@ def name():
 
 
 def passw():
-    return veletlen("A[1-4],a[1-10],0[3],&[1-4]", True)
+    return veletlen("A[1-4],a[4-10],0[3],&[1-4]", True)
 
 
 def jelszo():
-    return veletlen("Á[1-4],á[1-10],0[3],&[1-4]", True)
+    return veletlen("Á[1-4],á[4-10],0[3],&[1-4]", True)

@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
-class TestSign_upLap(object):
+class TestSign_upLap(object):  # A regisztráció teszteléséhez.
     def setup(self):
         self.options = Options()
         self.options.headless = True
@@ -16,8 +16,7 @@ class TestSign_upLap(object):
         self.submit = self.driver.find_element_by_xpath(lokatorok.submit)  # Sign up felirat.
 
     def teardown(self):  # Lerombolás.
-        pass
-        #self.driver.close()
+        self.driver.close()
 
     def hibaablak(self):
         self.felirat = self.driver.find_element_by_xpath(lokatorok.failed)
@@ -30,7 +29,7 @@ class TestSign_upLap(object):
         self.successful = self.driver.find_element_by_xpath(lokatorok.successful)
         self.successful_okgomb = self.driver.find_element_by_xpath(lokatorok.successful_okgomb)
 
-    def test_01_rossz_mezok(self, a, b, c, d):
+    def test_01_reg_mezok(self, a, b, c, d):
         if a == "":
             self.submit.click()
         elif b == "":
@@ -45,9 +44,31 @@ class TestSign_upLap(object):
             self.emil.send_keys(b)
             self.password.send_keys(c)
             self.submit.click()
-        time.sleep(1)
-        self.hibaablak()
-        log = self.reszlet.text == d
-        self.failed_okgomb.click()
+        time.sleep(3)
+        if d != "":
+            self.hibaablak()
+            log = self.reszlet.text == d
+            self.failed_okgomb.click()
+            return log
+        else:
+            time.sleep(3)
+            self.sikerablak()
+            log = self.successful.text == lokatorok.sikerszoveg
+            self.successful_okgomb.click()
+            self.driver.refresh()  # Újratöltöm az ablakot (nem tudom, miért, de így megy.
+            self.driver.find_element_by_xpath(lokatorok.logout).click()  # Logoutolok
+            return log
+
+
+class TestSign_inLap(object):  # A bejelentkezés teszteléséhez.
+    def setup(self):
+        self.options = Options()
+        self.options.headless = True
+        self.driver = webdriver.Chrome(options=self.options)
+        self.driver.get(lokatorok.signinlap)
+        self.emil = self.driver.find_element_by_xpath(lokatorok.signin_emil)
+        self.password = self.driver.find_element_by_xpath(lokatorok.signin_password)
+        self.submit = self.driver.find_element_by_xpath(lokatorok.signin_gomb)  # Sign up felirat.
+
+    def teardown(self):  # Lerombolás.
         self.driver.close()
-        return log

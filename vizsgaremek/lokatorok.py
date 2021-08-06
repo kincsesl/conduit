@@ -12,12 +12,12 @@ cookies_accept = "/html/body/div/footer/div/div/div/div[2]/button[2]/div"  # xpa
 cookies_declin = "/html/body/div/footer/div/div/div/div[1]/button[2]/div"
 nav_linkek = "nav-link"  # Az elemek class tulajdonsága.
 conduitfelirat = "/html/body/div/nav/div/a"  # Link a nyitólapra.
-
+logout = "/html/body/div[1]/nav/div/ul/li[5]/a"  # Link a logoutra (ha van)
 nyitolap = "http://localhost:1667/#/"
-
 signinlap = "http://localhost:1667/#/login"
-
 signuplap = "http://localhost:1667/#/register"
+
+# A signuplap.
 submit = "/html/body/div[1]/div/div/div/div/form/button"
 username = "/html/body/div[1]/div/div/div/div/form/fieldset[1]/input"
 emil = "/html/body/div[1]/div/div/div/div/form/fieldset[2]/input"
@@ -26,9 +26,15 @@ password = "/html/body/div[1]/div/div/div/div/form/fieldset[3]/input"
 welcome = "/html/body/div[2]/div/div[2]"  # Welcome! felirat
 successful = "/html/body/div[2]/div/div[3]"  # Your registration was successful! felirat
 successful_okgomb = "/html/body/div[2]/div/div[4]/div/button"  # (OK) gomb
+sikerszoveg = "Your registration was successful!"
 # Felugró ablak, hibás:
 failed = "/html/body/div[2]/div/div[2]"  # Registration failed!
 userhiba = ["Username field required.", "Email field required.", "Password field required.",
             "Password must be 8 characters long and include 1 number, 1 uppercase letter, and 1 lowercase letter."]
 reszlet = "/html/body/div[2]/div/div[3]"
 failed_okgomb = "/html/body/div[2]/div/div[4]/div/button"
+
+# A signinlap
+signin_emil = "/html/body/div[1]/div/div/div/div/form/fieldset[1]/input"
+signin_password = "/html/body/div[1]/div/div/div/div/form/fieldset[2]/input"
+signin_gomb = "/html/body/div[1]/div/div/div/div/form/button"

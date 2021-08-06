@@ -1,0 +1,12 @@
+test_nyitolinkek.py:
+    (Nincs a POM-ban.)
+    test_1: Elfogadtatja a cookie-kat, utána már nem jelenhet meg a cookie-s gomb.
+    test_2: Ide-oda kattint a Home, a SignIn és a SignUp linkekre, majd visszalép.
+
+test_signup_rosszak.py:
+    test_reg_mezok01-03: A megfelelő mező üreseh hagyásával nézi, hogy megjelenik-e a várt hiba.
+    (A 04 ismétlődő eset volt.)
+    test_reg_mezok05: A Password mező érvénytelen kitöltése után ellenőrzi a hibaüzenetet.
+
+test_signup_jok.py:
+    test_reg_mezok01(): Érvényes adatokkal regisztrál, nézi, megjelenik-e a sikeres regisztráció üzenete.
