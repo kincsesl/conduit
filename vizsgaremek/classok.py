@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 class TestSign_upLap(object):
     def setup(self):
         self.options = Options()
-        #self.options.headless = True
+        self.options.headless = True
         self.driver = webdriver.Chrome(options=self.options)
         self.driver.get(lokatorok.signuplap)
         self.username = self.driver.find_element_by_xpath(lokatorok.username)
