@@ -1,0 +1,71 @@
+[ {
+  "uid" : "666455dbb4902324",
+  "name" : "test_reg_mezok01",
+  "time" : {
+    "start" : 1628277342154,
+    "stop" : 1628277366074,
+    "duration" : 23920
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a2e96cc2549f9d3",
+  "name" : "test_1",
+  "time" : {
+    "start" : 1628277321090,
+    "stop" : 1628277325392,
+    "duration" : 4302
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c73e8a5555ffe25",
+  "name" : "test_reg_mezok01",
+  "time" : {
+    "start" : 1628277366077,
+    "stop" : 1628277374971,
+    "duration" : 8894
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8233eab57ef40ef",
+  "name" : "test_reg_mezok02",
+  "time" : {
+    "start" : 1628277374973,
+    "stop" : 1628277383725,
+    "duration" : 8752
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cca68178953ec18",
+  "name" : "test_reg_mezok05",
+  "time" : {
+    "start" : 1628277392477,
+    "stop" : 1628277401334,
+    "duration" : 8857
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15cab3a286008c16",
+  "name" : "test_reg_mezok03",
+  "time" : {
+    "start" : 1628277383728,
+    "stop" : 1628277392474,
+    "duration" : 8746
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b814acf1d60751c",
+  "name" : "test_3",
+  "time" : {
+    "start" : 1628277325395,
+    "stop" : 1628277342151,
+    "duration" : 16756
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

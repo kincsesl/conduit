@@ -1,0 +1,73 @@
+{
+  "uid" : "f8233eab57ef40ef",
+  "name" : "test_reg_mezok02",
+  "fullName" : "vizsgaremek.test_signup_rosszak#test_reg_mezok02",
+  "historyId" : "9b132042ccbca434426c294a26d564a0",
+  "time" : {
+    "start" : 1628277374973,
+    "stop" : 1628277383725,
+    "duration" : 8752
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "vizsgaremek"
+  }, {
+    "name" : "suite",
+    "value" : "test_signup_rosszak"
+  }, {
+    "name" : "host",
+    "value" : "fv-az42-510"
+  }, {
+    "name" : "thread",
+    "value" : "3723-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "vizsgaremek.test_signup_rosszak"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "c206bf8a5da5705d",
+        "reportUrl" : "https://kincsesl.github.io/conduit/11//#testresult/c206bf8a5da5705d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628258062576,
+          "stop" : 1628258071256,
+          "duration" : 8680
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f8233eab57ef40ef.json",
+  "parameterValues" : [ ]
+}
