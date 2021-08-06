@@ -1,0 +1,141 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "testproject",
+    "children" : [ {
+      "name" : "test_loginok",
+      "children" : [ {
+        "name" : "test_login1",
+        "uid" : "959b84ecbf4ff1f8",
+        "parentUid" : "7df791485eac10aa13904138a0d58374",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628238972702,
+          "stop" : 1628238972702,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login2",
+        "uid" : "616c133ec8f107cd",
+        "parentUid" : "7df791485eac10aa13904138a0d58374",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628238974364,
+          "stop" : 1628238974364,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7df791485eac10aa13904138a0d58374"
+    }, {
+      "name" : "test_posztok",
+      "children" : [ {
+        "name" : "test_post1",
+        "uid" : "17928570192695a7",
+        "parentUid" : "d8c7ad063fa2c12bf7552e9b6a5e7c5d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628238974518,
+          "stop" : 1628238974518,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_post2",
+        "uid" : "6d9b970a0ad84930",
+        "parentUid" : "d8c7ad063fa2c12bf7552e9b6a5e7c5d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628238979463,
+          "stop" : 1628238979463,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d8c7ad063fa2c12bf7552e9b6a5e7c5d"
+    }, {
+      "name" : "test_regteszt1",
+      "children" : [ {
+        "name" : "test_regteszt1",
+        "uid" : "94f3f7f3f090671d",
+        "parentUid" : "23886aa6d0a407ef15d373b530216665",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628238980634,
+          "stop" : 1628238980634,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "23886aa6d0a407ef15d373b530216665"
+    }, {
+      "name" : "test_regteszt2",
+      "children" : [ {
+        "name" : "test_regteszt2",
+        "uid" : "c648597b38b13c5f",
+        "parentUid" : "2dece636cff62022458845beb5a4bf4b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628238980791,
+          "stop" : 1628238980791,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2dece636cff62022458845beb5a4bf4b"
+    } ],
+    "uid" : "798ff21006314f256b66f89c75370c79"
+  }, {
+    "name" : "vizsgaremek",
+    "children" : [ {
+      "name" : "test_nyitolinkek",
+      "children" : [ {
+        "name" : "test_nyitolinkek",
+        "uid" : "9b6f382c55c4fc7d",
+        "parentUid" : "1b102d39b6ae52e42152d0762dc2c9aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628238980947,
+          "stop" : 1628238985953,
+          "duration" : 5006
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1b102d39b6ae52e42152d0762dc2c9aa"
+    }, {
+      "name" : "test_signup_rosszak",
+      "children" : [ {
+        "name" : "test_signup_rosszak",
+        "uid" : "ab2935834d7789d7",
+        "parentUid" : "0e35deace7990746ec7245f37c4e29a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628238985955,
+          "stop" : 1628238985959,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0e35deace7990746ec7245f37c4e29a5"
+    } ],
+    "uid" : "da6663af1d27d10d85dda71f5322ac6b"
+  } ],
+  "name" : "packages"
+}
