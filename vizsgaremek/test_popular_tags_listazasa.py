@@ -20,4 +20,5 @@ def test_popular_tags():  # Népszerű tegek.
     log = log and lap.popular_tags()
     lap.kijelentkezik()
     lap.teardown()
-    assert log  # Működik a bejelentkezés.
+    assert log  # Vannak popular tegek (legalább 2), kiírta csv-be.
+

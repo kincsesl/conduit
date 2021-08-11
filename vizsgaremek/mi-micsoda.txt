@@ -10,3 +10,16 @@ test_signup_rosszak.py:
 
 test_signup_jok.py:
     test_reg_mezok01(): Érvényes adatokkal regisztrál, nézi, megjelenik-e a sikeres regisztráció üzenete.
+
+
++Regisztráció
++Bejelentkezés
++Adatkezelési nyilatkozat használata
++Adatok listázása
+Több oldalas lista bejárása
+Új adat bevitel
+Ismételt és sorozatos adatbevitel adatforrásból
+Meglévő adat módosítás
+Adat vagy adatok törlése
+Adatok lementése felületről
++Kijelentkezés

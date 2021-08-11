@@ -117,4 +117,10 @@ class TestSign_inLap(object):  # A bejelentkezés teszteléséhez.
     def popular_tags(self):
         self.popular = self.driver.find_element_by_xpath(lokatorok.popular_div)  # A divje
         self.lista = self.popular.find_elements_by_tag_name("a")  # A tagok.
-        return len(self.lista) > 0
+        self.sztring = ""
+        for elem in self.lista:  # Kiíratom az elemeket.
+            self.sztring += elem.text + ";"
+        self.sztring = self.sztring[0:len(self.sztring) - 1]  # Törlöm az utolsó pontosvesszőt.
+        with open("populars.csv", "w") as file:
+            file.write(self.sztring)
+        return len(self.lista) > 2
