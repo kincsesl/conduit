@@ -17,6 +17,7 @@ logout = "/html/body/div/nav/div/ul/li[5]/a"
 nyitolap = "http://localhost:1667/#/"
 signinlap = "http://localhost:1667/#/login"
 signuplap = "http://localhost:1667/#/register"
+navigacios = "/html/body/div/nav/div/ul"
 
 # A signuplap.
 submit = "/html/body/div[1]/div/div/div/div/form/button"
@@ -26,7 +27,8 @@ password = "/html/body/div[1]/div/div/div/div/form/fieldset[3]/input"
 # Felugró ablak, sikeres:
 welcome = "/html/body/div[2]/div/div[2]"  # Welcome! felirat
 successful = "/html/body/div[2]/div/div[3]"  # Your registration was successful! felirat
-successful_okgomb = "/html/body/div[2]/div/div[4]/div/button"  # (OK) gomb
+successful_okgomb = "/html/body/div[2]/div/div[4]/div/button"
+# (OK) gomb
 sikerszoveg = "Your registration was successful!"
 # Felugró ablak, hibás:
 failed = "/html/body/div[2]/div/div[2]"  # Registration failed!

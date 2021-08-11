@@ -3,6 +3,22 @@ import lokatorok
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+def fejlecobjektumok(driv):
+    navbar = driv.find_element_by_xpath(lokatorok.navigacios)
+    listam = navbar.find_elements_by_tag_name("li")
+    szotar = {}
+    for listaelem in listam:
+        kulcs = listaelem.text.replace("&nbsp", "").replace(" ", "")
+        szotar[kulcs] = listaelem.find_element_by_tag_name("a")
+    return szotar
+
+def vanlogout(driv):
+    navbar = driv.find_element_by_xpath(lokatorok.navigacios)
+    listam = navbar.find_elements_by_tag_name("li")
+    log = False
+    for listaelem in listam:
+        log = log or listaelem.text.find("Log out") > 0
+    return log
 
 class TestSign_upLap(object):  # A regisztráció teszteléséhez.
     def setup(self):
@@ -50,12 +66,13 @@ class TestSign_upLap(object):  # A regisztráció teszteléséhez.
             log = self.reszlet.text == d
             self.failed_okgomb.click()
         else:
-            time.sleep(3)
             self.sikerablak()
             log = self.successful.text == lokatorok.sikerszoveg
             self.successful_okgomb.click()
             self.driver.refresh()  # Újratöltöm az ablakot (nem tudom, miért, de így megy).
-            time.sleep(2)
+            time.sleep(1)
+            """
+            Hol kiléptetne, hol nem
             self.egyiklogout = self.driver.find_elements_by_xpath(lokatorok.logout) # Logoutolok
             self.masiklogout = self.driver.find_elements_by_xpath(lokatorok.logout0) # Logoutolok
             if len(self.egyiklogout)>0:
@@ -64,6 +81,7 @@ class TestSign_upLap(object):  # A regisztráció teszteléséhez.
                 self.masiklogout[0].click()
             else:
                 log = False
+            """
         return log
 
 
@@ -86,4 +104,7 @@ class TestSign_inLap(object):  # A bejelentkezés teszteléséhez.
         self.submit.click()
         time.sleep(3)
         self.driver.refresh()
-        return len(self.driver.find_elements_by_xpath(lokatorok.logout)) > 0
+        return vanlogout(self.driver)
+        fejlecobjektumok(self.driver)["Logout"].click()
+        #return len(self.driver.find_elements_by_xpath(lokatorok.logout0)) > 0 or len(self.driver.find_elements_by_xpath(lokatorok.logout)) > 0
+        #return vanlogout(self.driver)
