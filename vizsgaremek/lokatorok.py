@@ -41,3 +41,6 @@ failed_okgomb = "/html/body/div[2]/div/div[4]/div/button"
 signin_emil = "/html/body/div[1]/div/div/div/div/form/fieldset[1]/input"
 signin_password = "/html/body/div[1]/div/div/div/div/form/fieldset[2]/input"
 signin_gomb = "/html/body/div[1]/div/div/div/div/form/button"
+
+# Nyitólap bejelentkezve
+popular_div = "//div[@class = 'sidebar']/div[@class = 'tag-list']"
