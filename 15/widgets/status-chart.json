@@ -1,0 +1,81 @@
+[ {
+  "uid" : "6b1c85beb7ff3c0c",
+  "name" : "test_3",
+  "time" : {
+    "start" : 1628690526536,
+    "stop" : 1628690543382,
+    "duration" : 16846
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54a956889c2c87a2",
+  "name" : "test_reg_mezok03",
+  "time" : {
+    "start" : 1628690595706,
+    "stop" : 1628690604631,
+    "duration" : 8925
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ff5b94d0219415e",
+  "name" : "test_popular_tags",
+  "time" : {
+    "start" : 1628690543385,
+    "stop" : 1628690560745,
+    "duration" : 17360
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb9ff0f7a9bc3a82",
+  "name" : "test_reg_mezok01",
+  "time" : {
+    "start" : 1628690560749,
+    "stop" : 1628690578141,
+    "duration" : 17392
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "287115d152370e24",
+  "name" : "test_1",
+  "time" : {
+    "start" : 1628690521297,
+    "stop" : 1628690526534,
+    "duration" : 5237
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a2f2565b1034e4b",
+  "name" : "test_reg_mezok05",
+  "time" : {
+    "start" : 1628690604634,
+    "stop" : 1628690613559,
+    "duration" : 8925
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "edf72631eda82297",
+  "name" : "test_reg_mezok02",
+  "time" : {
+    "start" : 1628690586887,
+    "stop" : 1628690595703,
+    "duration" : 8816
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "484bfc831eedca7c",
+  "name" : "test_reg_mezok01",
+  "time" : {
+    "start" : 1628690578145,
+    "stop" : 1628690586884,
+    "duration" : 8739
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
