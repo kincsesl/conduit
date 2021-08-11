@@ -18,5 +18,6 @@ def test_popular_tags():  # Népszerű tegek.
     time.sleep(2)
     log = log and lap.bejelentkezik(b, c)
     log = log and lap.popular_tags()
+    lap.kijelentkezik()
     lap.teardown()
     assert log  # Működik a bejelentkezés.

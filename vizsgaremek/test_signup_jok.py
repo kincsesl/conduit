@@ -26,5 +26,7 @@ def test_reg_mezok01():  # Érvényes regisztráció + bejelentkezés.
     lap.setup()
     time.sleep(2)
     log = log and lap.bejelentkezik(b, c)
-    assert log #Működik a bejelentkezés.
+    lap.kijelentkezik()
     lap.teardown()
+    assert log #Működik a bejelentkezés.
+

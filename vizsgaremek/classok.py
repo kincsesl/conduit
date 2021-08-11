@@ -91,7 +91,7 @@ class TestSign_upLap(object):  # A regisztráció teszteléséhez.
 class TestSign_inLap(object):  # A bejelentkezés teszteléséhez.
     def setup(self):
         self.options = Options()
-        #self.options.headless = True
+        self.options.headless = True
         self.driver = webdriver.Chrome(options=self.options)
         self.driver.get(lokatorok.signinlap)
         self.emil = self.driver.find_element_by_xpath(lokatorok.signin_emil)
@@ -108,7 +108,9 @@ class TestSign_inLap(object):  # A bejelentkezés teszteléséhez.
         time.sleep(3)
         self.driver.refresh()
         return vanlogout(self.driver)
-        fejlecobjektumok(self.driver)["Logout"].click()
+
+    def kijelentkezik(self):
+        return fejlecobjektumok(self.driver)["Logout"].click()
         # return len(self.driver.find_elements_by_xpath(lokatorok.logout0)) > 0 or len(self.driver.find_elements_by_xpath(lokatorok.logout)) > 0
         # return vanlogout(self.driver)
 
