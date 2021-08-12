@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'veletlen_adatok.csv'",
+      "children" : [ {
+        "name" : "test_settings_mindenfele",
+        "uid" : "b2d124fd7e9d1dc2",
+        "parentUid" : "679e4496cc5f75db8b96ca5267a5cee5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628782804485,
+          "stop" : 1628782804486,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "679e4496cc5f75db8b96ca5267a5cee5"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

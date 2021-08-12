@@ -1,0 +1,146 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "vizsgaremek",
+    "children" : [ {
+      "name" : "test_nyitolinkek",
+      "children" : [ {
+        "name" : "test_1",
+        "uid" : "cc7539787287d86a",
+        "parentUid" : "3f8b6be18caf214f509e24320b288dc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628782756462,
+          "stop" : 1628782761492,
+          "duration" : 5030
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_3",
+        "uid" : "b2088b0bd0d62a22",
+        "parentUid" : "3f8b6be18caf214f509e24320b288dc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628782761495,
+          "stop" : 1628782778487,
+          "duration" : 16992
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3f8b6be18caf214f509e24320b288dc1"
+    }, {
+      "name" : "test_popular_tags_listazasa",
+      "children" : [ {
+        "name" : "test_popular_tags",
+        "uid" : "cffa20f9fc35c82b",
+        "parentUid" : "de28bb4e3e38f80e618a0e480c8ca5de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628782778491,
+          "stop" : 1628782804482,
+          "duration" : 25991
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "de28bb4e3e38f80e618a0e480c8ca5de"
+    }, {
+      "name" : "test_settings_oda-vissza",
+      "children" : [ {
+        "name" : "test_settings_mindenfele",
+        "uid" : "b2d124fd7e9d1dc2",
+        "parentUid" : "a1e3a6b2537f0d6e8730585a5c6a28a0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628782804485,
+          "stop" : 1628782804486,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a1e3a6b2537f0d6e8730585a5c6a28a0"
+    }, {
+      "name" : "test_signup_jok",
+      "children" : [ {
+        "name" : "test_reg_mezok01",
+        "uid" : "c04bec15a3e4f1fb",
+        "parentUid" : "f705dd2bb0cfb9c34b62c976091fcf2f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628782804524,
+          "stop" : 1628782830465,
+          "duration" : 25941
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f705dd2bb0cfb9c34b62c976091fcf2f"
+    }, {
+      "name" : "test_signup_rosszak",
+      "children" : [ {
+        "name" : "test_reg_mezok01",
+        "uid" : "b365443d6753fe00",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628782830468,
+          "stop" : 1628782843420,
+          "duration" : 12952
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_reg_mezok02",
+        "uid" : "c9c3e245f042a32a",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628782843423,
+          "stop" : 1628782856449,
+          "duration" : 13026
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_reg_mezok03",
+        "uid" : "17fa6b11c22a5b30",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628782856452,
+          "stop" : 1628782869537,
+          "duration" : 13085
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_reg_mezok05",
+        "uid" : "e941ad0ffdee316a",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628782869540,
+          "stop" : 1628782882682,
+          "duration" : 13142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f9dd2fba1a68c63f56e1fb846bf8b022"
+    } ],
+    "uid" : "cbd10818b8e0140de597780ddf104a7d"
+  } ],
+  "name" : "suites"
+}
