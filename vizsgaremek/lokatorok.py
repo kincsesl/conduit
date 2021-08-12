@@ -53,3 +53,4 @@ settings_bio = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[3]/text
 settings_emil = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[4]/input"
 settings_password = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[5]/input"
 settings_submit = "/html/body/div[1]/div/div/div/div/form/fieldset/button"
+settings_updatesuccessfull = "/html/body/div[2]/div/div[3]/div/button"

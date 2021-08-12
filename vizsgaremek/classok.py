@@ -140,7 +140,7 @@ class TestSign_inLap(object):  # A bejelentkezés teszteléséhez.
 class Test_signup_settings(object):
     def setup(self):
         self.options = Options()
-        # self.options.headless = True
+        self.options.headless = True
         self.driver = webdriver.Chrome(options=self.options)
 
     def regisztral(self, a, b, c):
@@ -154,27 +154,28 @@ class Test_signup_settings(object):
         self.emil.send_keys(b)
         self.password.send_keys(c)
         self.submit.click()  # Regisztrál.
-        time.sleep(4)
+        time.sleep(2)
         van_e_ok = self.driver.find_elements_by_xpath(lokatorok.successful_okgomb)
-        if len(van_e_ok) >0:
+        if len(van_e_ok) > 0:
             van_e_ok[0].click()  # Siker, OK.
         if vanlogout(self.driver):  # Kiléptet, ha van Logout.
             fejlecobjektumok(self.driver)["Logout"].click()
 
     def bejelentkezik(self, a, b):
-        fejlecek = fejlecobjektumok(self.driver)
-        fejlecek["Signin"].click()
+        self.driver.get(lokatorok.signinlap)
         time.sleep(1)
         self.emil = self.driver.find_element_by_xpath(lokatorok.signin_emil)
         self.password = self.driver.find_element_by_xpath(lokatorok.signin_password)
         self.submit = self.driver.find_element_by_xpath(lokatorok.signin_gomb)  # Sign in felirat.
         self.emil.send_keys(a)
         self.password.send_keys(b)
-        self.submit.click()
+        # self.submit.click()
         time.sleep(2)
-        return vanlogout(self.driver) # Ha van, akkor belépett.
+        return vanlogout(self.driver)  # Ha van, akkor belépett.
 
     def settingek(self, w, x, z):
+        fejlecobjektumok(self.driver)["Settings"].click()
+        time.sleep(1)
         self.name = self.driver.find_element_by_xpath(lokatorok.settings_name)
         self.bio = self.driver.find_element_by_xpath(lokatorok.settings_bio)
         self.password = self.driver.find_element_by_xpath(lokatorok.settings_password)
@@ -185,7 +186,17 @@ class Test_signup_settings(object):
         self.bio.send_keys(x)
         self.password.clear()
         self.password.send_keys(z)
-        return self.submitgomb.click()
+        self.submitgomb.click()
+        time.sleep(3)
+        self.success = self.driver.find_elements_by_xpath(lokatorok.settings_updatesuccessfull)
+        # if vanlogout(self.driver):  # Kiléptet, ha van Logout.
+        #   fejlecobjektumok(self.driver)["Logout"].click()
+        # self.driver.refresh()
+        if len(self.success) > 0:
+            self.success[0].click()
+            return True
+        else:
+            return False
 
     def teardown(self):  # Lerombolás.
         self.driver.close()

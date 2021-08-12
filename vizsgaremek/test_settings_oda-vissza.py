@@ -9,10 +9,6 @@ uj_password = "Asdfghj1"
 def beolvas():
     with open("veletlen_adatok.csv", "r") as file:  # Beolvassa az első sort
         sor = file.readline()
-        sor = file.readline()
-        sor = file.readline()
-        sor = file.readline()
-        sor = file.readline()
         return sor.split(";")
 
 
@@ -26,13 +22,10 @@ def test_settings_mindenfele():
     time.sleep(2)
     lap.regisztral(a, b, c)  # Regisztrál, kilépteti magát.
     log = lap.bejelentkezik(b, c)  # Belép a fenti adatokkal.
-    assert log
-"""
-    
     log = log and lap.settingek(uj_name, uj_bio, uj_password)  # Átírja a mezőket.
     log = log and lap.bejelentkezik(b, uj_password)  # Belép az új adatokkal.
     log = log and lap.settingek(a, uj_bio, c)  # Visszaírja a régi adatokat, a biót hagyja.
     log = log and lap.bejelentkezik(b, c)  # Belép a régi adatokkal.
     assert log
-    """
+
 
