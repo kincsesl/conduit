@@ -5,6 +5,14 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
+def cookies(driv):
+    time.sleep(2)
+    kuki = driv.find_elements_by_xpath("/html/body/div/footer/div/div/div/div[2]/button[2]/div")
+    if len(kuki) > 0:
+        kuki[0].click()
+    time.sleep(2)
+
+
 def fejlecobjektumok(driv):
     navbar = driv.find_element_by_xpath(lokatorok.navigacios)
     listam = navbar.find_elements_by_tag_name("li")
@@ -30,6 +38,7 @@ class TestSign_upLap(object):  # A regisztráció teszteléséhez.
         self.options.headless = True
         self.driver = webdriver.Chrome(options=self.options)
         self.driver.get(lokatorok.signuplap)
+        cookies(self.driver)
         self.username = self.driver.find_element_by_xpath(lokatorok.username)
         self.emil = self.driver.find_element_by_xpath(lokatorok.emil)
         self.password = self.driver.find_element_by_xpath(lokatorok.password)
@@ -95,6 +104,7 @@ class TestSign_inLap(object):  # A bejelentkezés teszteléséhez.
         self.options.headless = True
         self.driver = webdriver.Chrome(options=self.options)
         self.driver.get(lokatorok.signinlap)
+        cookies(self.driver)
         self.emil = self.driver.find_element_by_xpath(lokatorok.signin_emil)
         self.password = self.driver.find_element_by_xpath(lokatorok.signin_password)
         self.submit = self.driver.find_element_by_xpath(lokatorok.signin_gomb)  # Sign in felirat.
@@ -135,6 +145,7 @@ class Test_signup_settings(object):
 
     def regisztral(self, a, b, c):
         self.driver.get(lokatorok.signuplap)
+        cookies(self.driver)
         self.username = self.driver.find_element_by_xpath(lokatorok.username)
         self.emil = self.driver.find_element_by_xpath(lokatorok.emil)
         self.password = self.driver.find_element_by_xpath(lokatorok.password)
@@ -143,24 +154,25 @@ class Test_signup_settings(object):
         self.emil.send_keys(b)
         self.password.send_keys(c)
         self.submit.click()  # Regisztrál.
-        time.sleep(3)
-        self.driver.find_element_by_xpath(lokatorok.successful_okgomb).click()  # Siker, OK.
+        time.sleep(4)
+        van_e_ok = self.driver.find_elements_by_xpath(lokatorok.successful_okgomb)
+        if len(van_e_ok) >0:
+            van_e_ok[0].click()  # Siker, OK.
         if vanlogout(self.driver):  # Kiléptet, ha van Logout.
             fejlecobjektumok(self.driver)["Logout"].click()
 
     def bejelentkezik(self, a, b):
-        #self.driver.get(lokatorok.signinlap)
         fejlecek = fejlecobjektumok(self.driver)
         fejlecek["Signin"].click()
-        time.sleep(2)
+        time.sleep(1)
         self.emil = self.driver.find_element_by_xpath(lokatorok.signin_emil)
         self.password = self.driver.find_element_by_xpath(lokatorok.signin_password)
-        #self.submit = self.driver.find_element_by_xpath(lokatorok.signin_gomb)  # Sign in felirat.
+        self.submit = self.driver.find_element_by_xpath(lokatorok.signin_gomb)  # Sign in felirat.
         self.emil.send_keys(a)
         self.password.send_keys(b)
-        #self.submit.click()
+        self.submit.click()
         time.sleep(2)
-        return vanlogout(self.driver)
+        return vanlogout(self.driver) # Ha van, akkor belépett.
 
     def settingek(self, w, x, z):
         self.name = self.driver.find_element_by_xpath(lokatorok.settings_name)
