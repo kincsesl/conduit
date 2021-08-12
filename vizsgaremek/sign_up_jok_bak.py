@@ -22,7 +22,6 @@ def test_reg_mezok01():  # Érvényes regisztráció + bejelentkezés.
     lap.setup()
     time.sleep(2)
     log = lap.test_01_reg_mezok(a, b, c, "")
-    print(log, a, b, c)
     time.sleep(2)
     lap.teardown()  # A regisztráció bezár.
     lap = classok.TestSign_inLap()  # A bejelentkezés nyit.

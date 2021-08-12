@@ -17,19 +17,21 @@ logout = "/html/body/div/nav/div/ul/li[5]/a"
 nyitolap = "http://localhost:1667/#/"
 signinlap = "http://localhost:1667/#/login"
 signuplap = "http://localhost:1667/#/register"
-navigacios = "/html/body/div/nav/div/ul"
+navigacios = "//ul[@class = 'nav navbar-nav pull-xs-right']"
+
 
 # A signuplap.
-submit = "/html/body/div[1]/div/div/div/div/form/button"
+submit = "/html/body/div[1]/div/div/div/div/form/button"  # A Sign up gomb.
 username = "/html/body/div[1]/div/div/div/div/form/fieldset[1]/input"
 emil = "/html/body/div[1]/div/div/div/div/form/fieldset[2]/input"
 password = "/html/body/div[1]/div/div/div/div/form/fieldset[3]/input"
+
 # Felugró ablak, sikeres:
 welcome = "/html/body/div[2]/div/div[2]"  # Welcome! felirat
 successful = "/html/body/div[2]/div/div[3]"  # Your registration was successful! felirat
-successful_okgomb = "/html/body/div[2]/div/div[4]/div/button"
-# (OK) gomb
+successful_okgomb = "/html/body/div[2]/div/div[4]/div/button"  # (OK) gomb
 sikerszoveg = "Your registration was successful!"
+
 # Felugró ablak, hibás:
 failed = "/html/body/div[2]/div/div[2]"  # Registration failed!
 userhiba = ["Username field required.", "Email field required.", "Password field required.",
@@ -44,3 +46,10 @@ signin_gomb = "/html/body/div[1]/div/div/div/div/form/button"
 
 # Nyitólap bejelentkezve
 popular_div = "//div[@class = 'sidebar']/div[@class = 'tag-list']"
+
+# Settings a bejelentkezett ürgének
+settings_name = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[2]/input"
+settings_bio = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[3]/textarea"
+settings_emil = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[4]/input"
+settings_password = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[5]/input"
+settings_submit = "/html/body/div[1]/div/div/div/div/form/fieldset/button"

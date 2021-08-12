@@ -1,4 +1,7 @@
 import time
+
+import seleniumex
+
 import lokatorok
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -11,6 +14,7 @@ def fejlecobjektumok(driv):
     for listaelem in listam:
         kulcs = listaelem.text.replace("&nbsp", "").replace(" ", "")
         szotar[kulcs] = listaelem.find_element_by_tag_name("a")
+    print(szotar)
     return szotar
 
 
@@ -32,7 +36,7 @@ class TestSign_upLap(object):  # A regisztráció teszteléséhez.
         self.username = self.driver.find_element_by_xpath(lokatorok.username)
         self.emil = self.driver.find_element_by_xpath(lokatorok.emil)
         self.password = self.driver.find_element_by_xpath(lokatorok.password)
-        self.submit = self.driver.find_element_by_xpath(lokatorok.submit)  # Sign up felirat.
+        self.submit = self.driver.find_element_by_xpath(lokatorok.submit)  # Sign up gomb a felpattanóban.
 
     def teardown(self):  # Lerombolás.
         self.driver.close()
@@ -96,7 +100,7 @@ class TestSign_inLap(object):  # A bejelentkezés teszteléséhez.
         self.driver.get(lokatorok.signinlap)
         self.emil = self.driver.find_element_by_xpath(lokatorok.signin_emil)
         self.password = self.driver.find_element_by_xpath(lokatorok.signin_password)
-        self.submit = self.driver.find_element_by_xpath(lokatorok.signin_gomb)  # Sign up felirat.
+        self.submit = self.driver.find_element_by_xpath(lokatorok.signin_gomb)  # Sign in felirat.
 
     def teardown(self):  # Lerombolás.
         self.driver.close()
@@ -124,3 +128,55 @@ class TestSign_inLap(object):  # A bejelentkezés teszteléséhez.
         with open("populars.csv", "w") as file:
             file.write(self.sztring)
         return len(self.lista) > 2
+
+
+class Test_signup_settings(object):
+    def setup(self):
+        self.options = Options()
+        # self.options.headless = True
+        self.driver = webdriver.Chrome(options=self.options)
+
+    def regisztral(self, a, b, c):
+        self.driver.get(lokatorok.signuplap)
+        self.username = self.driver.find_element_by_xpath(lokatorok.username)
+        self.emil = self.driver.find_element_by_xpath(lokatorok.emil)
+        self.password = self.driver.find_element_by_xpath(lokatorok.password)
+        self.submit = self.driver.find_element_by_xpath(lokatorok.submit)  # Sign up felirat.
+        self.username.send_keys(a)
+        self.emil.send_keys(b)
+        self.password.send_keys(c)
+        self.submit.click()  # Regisztrál.
+        time.sleep(3)
+        self.driver.find_element_by_xpath(lokatorok.successful_okgomb).click()  # Siker, OK.
+        if vanlogout(self.driver):  # Kiléptet, ha van Logout.
+            fejlecobjektumok(self.driver)["Logout"].click()
+
+    def bejelentkezik(self, a, b):
+        #self.driver.get(lokatorok.signinlap)
+        fejlecek = fejlecobjektumok(self.driver)
+        fejlecek["Signin"].click()
+        time.sleep(2)
+        self.emil = self.driver.find_element_by_xpath(lokatorok.signin_emil)
+        self.password = self.driver.find_element_by_xpath(lokatorok.signin_password)
+        #self.submit = self.driver.find_element_by_xpath(lokatorok.signin_gomb)  # Sign in felirat.
+        self.emil.send_keys(a)
+        self.password.send_keys(b)
+        #self.submit.click()
+        time.sleep(2)
+        return vanlogout(self.driver)
+
+    def settingek(self, w, x, z):
+        self.name = self.driver.find_element_by_xpath(lokatorok.settings_name)
+        self.bio = self.driver.find_element_by_xpath(lokatorok.settings_bio)
+        self.password = self.driver.find_element_by_xpath(lokatorok.settings_password)
+        self.submitgomb = self.driver.find_element_by_xpath(lokatorok.settings_submit)
+        self.name.clear()  # Kitöltöm új adatokkal.
+        self.name.send_keys(w)
+        self.bio.clear()
+        self.bio.send_keys(x)
+        self.password.clear()
+        self.password.send_keys(z)
+        return self.submitgomb.click()
+
+    def teardown(self):  # Lerombolás.
+        self.driver.close()

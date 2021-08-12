@@ -9,8 +9,13 @@ test_signup_rosszak.py:
     test_reg_mezok05: A Password mező érvénytelen kitöltése után ellenőrzi a hibaüzenetet.
 
 test_signup_jok.py:
-    test_reg_mezok01(): Érvényes adatokkal regisztrál, nézi, megjelenik-e a sikeres regisztráció üzenete.
+    test_reg_mezok01(): Érvényes adatokkal regisztrál, nézi, megjelenik-e a sikeres regisztráció üzenete,
+                        belép, kiléptet.
 
+test_popular_tags_listazasa.py:
+    def test_popular_tags(): Érvényes adatokkal regisztrál, nézi, megjelenik-e a
+                             sikeresregisztráció üzenete, belép, ellenőrzi, van-e legalább
+                             2 Popular Tags, ezeket a populars.cs-be kiírja, kiléptet.
 
 +Regisztráció
 +Bejelentkezés
@@ -19,7 +24,7 @@ test_signup_jok.py:
 Több oldalas lista bejárása
 Új adat bevitel
 Ismételt és sorozatos adatbevitel adatforrásból
-Meglévő adat módosítás
+Meglévő adat módosítása
 Adat vagy adatok törlése
 Adatok lementése felületről
 +Kijelentkezés
