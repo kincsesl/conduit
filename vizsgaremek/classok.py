@@ -1,7 +1,5 @@
 import time
 
-import seleniumex
-
 import lokatorok
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -14,7 +12,6 @@ def fejlecobjektumok(driv):
     for listaelem in listam:
         kulcs = listaelem.text.replace("&nbsp", "").replace(" ", "")
         szotar[kulcs] = listaelem.find_element_by_tag_name("a")
-    print(szotar)
     return szotar
 
 
