@@ -1,0 +1,146 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "vizsgaremek",
+    "children" : [ {
+      "name" : "test_nyitolinkek",
+      "children" : [ {
+        "name" : "test_1",
+        "uid" : "9ce73eba244fa591",
+        "parentUid" : "1b102d39b6ae52e42152d0762dc2c9aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628783544923,
+          "stop" : 1628783557951,
+          "duration" : 13028
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_3",
+        "uid" : "9eca487966ee9652",
+        "parentUid" : "1b102d39b6ae52e42152d0762dc2c9aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628783557954,
+          "stop" : 1628783575122,
+          "duration" : 17168
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1b102d39b6ae52e42152d0762dc2c9aa"
+    }, {
+      "name" : "test_popular_tags_listazasa",
+      "children" : [ {
+        "name" : "test_popular_tags",
+        "uid" : "ba4f9b0a361d7f8b",
+        "parentUid" : "543e8955f850a48388dacb600afc28c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628783575125,
+          "stop" : 1628783601450,
+          "duration" : 26325
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "543e8955f850a48388dacb600afc28c7"
+    }, {
+      "name" : "test_settings_oda-vissza",
+      "children" : [ {
+        "name" : "test_settings_mindenfele",
+        "uid" : "a935ab37a613b741",
+        "parentUid" : "e10a7690d4f3298581e67bc3f98a926e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628783601453,
+          "stop" : 1628783601454,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e10a7690d4f3298581e67bc3f98a926e"
+    }, {
+      "name" : "test_signup_jok",
+      "children" : [ {
+        "name" : "test_reg_mezok01",
+        "uid" : "851cd636b4f79c82",
+        "parentUid" : "a9c215da4716773db252dae96b02fcc6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628783601496,
+          "stop" : 1628783627176,
+          "duration" : 25680
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a9c215da4716773db252dae96b02fcc6"
+    }, {
+      "name" : "test_signup_rosszak",
+      "children" : [ {
+        "name" : "test_reg_mezok01",
+        "uid" : "9038e5a6d4801811",
+        "parentUid" : "0e35deace7990746ec7245f37c4e29a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628783627180,
+          "stop" : 1628783640118,
+          "duration" : 12938
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_reg_mezok02",
+        "uid" : "422a65b3dbef2c59",
+        "parentUid" : "0e35deace7990746ec7245f37c4e29a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628783640120,
+          "stop" : 1628783653077,
+          "duration" : 12957
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_reg_mezok03",
+        "uid" : "76c8f909db9e0d42",
+        "parentUid" : "0e35deace7990746ec7245f37c4e29a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628783653080,
+          "stop" : 1628783666106,
+          "duration" : 13026
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_reg_mezok05",
+        "uid" : "77350530003fabb3",
+        "parentUid" : "0e35deace7990746ec7245f37c4e29a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628783666108,
+          "stop" : 1628783679189,
+          "duration" : 13081
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0e35deace7990746ec7245f37c4e29a5"
+    } ],
+    "uid" : "da6663af1d27d10d85dda71f5322ac6b"
+  } ],
+  "name" : "packages"
+}
