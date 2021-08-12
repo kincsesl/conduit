@@ -54,3 +54,13 @@ settings_emil = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[4]/inp
 settings_password = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[5]/input"
 settings_submit = "/html/body/div[1]/div/div/div/div/form/fieldset/button"
 settings_updatesuccessfull = "/html/body/div[2]/div/div[3]/div/button"
+
+# A New Article oldal
+article_url = "http://localhost:1667/#/editor"
+article_title = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[1]/input"
+article_about = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[2]/input"
+article_write = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[3]/textarea"
+article_tags = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[4]/div/div/ul/li/input"
+article_publishgomb = "/html/body/div[1]/div/div/div/div/form/button"
+article_comment = "/html/body/div[1]/div/div[2]/div[2]/div/div/form/div[1]/textarea"
+article_postgomb = "/html/body/div[1]/div/div[2]/div[2]/div/div/form/div[2]/button"

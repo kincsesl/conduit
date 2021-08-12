@@ -1,3 +1,4 @@
+# Egyszeri futtatásra van.
 import randomstring
 
 with open("veletlen_adatok.csv", "w") as file:  # 10 véletlen regisztrációs adatot hoz létre és ment csv-be.

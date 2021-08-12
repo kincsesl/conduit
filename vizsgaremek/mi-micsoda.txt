@@ -22,9 +22,9 @@ test_popular_tags_listazasa.py:
 +Adatkezelési nyilatkozat használata
 +Adatok listázása
 Több oldalas lista bejárása
-Új adat bevitel
++Új adat bevitel
 Ismételt és sorozatos adatbevitel adatforrásból
-Meglévő adat módosítása
++Meglévő adat módosítása
 Adat vagy adatok törlése
-Adatok lementése felületről
++Adatok lementése felületről
 +Kijelentkezés
