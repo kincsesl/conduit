@@ -15,7 +15,7 @@ def test_articles_ir_olvas_torol():
     log = log and lap.bejelentkezik(emil, password)  # Belép, és a New Article oldalra lép.
     lap.article_oldal()  # Rálép az Article oldalra.
     for i in range(hanycikk):
-        hanyadik = str(i+1)
+        hanyadik = str(i + 1)
         title = hanyadik + ". title"
         about = hanyadik + ". about"
         write = hanyadik + ". write"
@@ -25,7 +25,7 @@ def test_articles_ir_olvas_torol():
         time.sleep(2)
     cikkeim = lap.sajat_cikkek_listaja(emil, password)
     for i in range(hanycikk):
-        hanyadik = str(i+1)
+        hanyadik = str(i + 1)
         lista = []
         title = hanyadik + ". title"
         about = hanyadik + ". about"

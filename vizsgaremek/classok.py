@@ -286,10 +286,10 @@ class Test_articles(object):
                 self.tulaj = self.szovege[0:self.szovege.find("\n")]
                 self.listaelem = []
                 if self.tulaj == "HarryPotter":
-                    #self.listaelem.append(self.tulaj)
+                    # self.listaelem.append(self.tulaj)
                     self.listaelem.append(self.cikk.find_element_by_tag_name("h1").text)
                     self.listaelem.append(self.cikk.find_element_by_tag_name("p").text)
-                    #self.listaelem.append(cikk.find_element_by_xpath("//a[@class = 'tag-pill tag-default']").text)
+                    # self.listaelem.append(cikk.find_element_by_xpath("//a[@class = 'tag-pill tag-default']").text)
                     self.cikkeim.append(self.listaelem)
         return self.cikkeim
 
