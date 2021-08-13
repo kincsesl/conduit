@@ -19,7 +19,6 @@ signinlap = "http://localhost:1667/#/login"
 signuplap = "http://localhost:1667/#/register"
 navigacios = "//ul[@class = 'nav navbar-nav pull-xs-right']"
 
-
 # A signuplap.
 submit = "/html/body/div[1]/div/div/div/div/form/button"  # A Sign up gomb.
 username = "/html/body/div[1]/div/div/div/div/form/fieldset[1]/input"
@@ -64,3 +63,9 @@ article_tags = "/html/body/div[1]/div/div/div/div/form/fieldset/fieldset[4]/div/
 article_publishgomb = "/html/body/div[1]/div/div/div/div/form/button"
 article_comment = "/html/body/div[1]/div/div[2]/div[2]/div/div/form/div[1]/textarea"
 article_postgomb = "/html/body/div[1]/div/div[2]/div[2]/div/div/form/div[2]/button"
+
+# Home, a cikkek
+cikk_homeglobal = "//div[@class = 'home-global']"  # A cikkgyűjtemény az adott oldalon.
+cikk_cikkek = "//div[@class = 'article-preview']"
+cikk_sajatok = "//a[@href = '#/@HarryPotter/']"
+cikk_oldalgombok = "//a[@class = 'page-link']"  # A .text a gomb felirata.

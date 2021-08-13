@@ -266,15 +266,36 @@ class Test_articles(object):
         time.sleep(1)
         self.driver.find_element_by_xpath(lokatorok.article_publishgomb).click()  # Publikálja
         fejlecobjektumok(self.driver)["NewArticle"].click()
-        """
-        self.driver.refresh()
-        kitolt(self.driver.find_element_by_xpath(lokatorok.article_comment), e)  # Kommentálja
-        self.driver.find_element_by_xpath(lokatorok.article_postgomb)  # Posztolja
-        """
         return vanarticle(self.driver)
+
+    def sajat_cikkek_listaja(self, a, b):
+        self.driver.get(lokatorok.nyitolap)
+        if not vanlogout(self.driver):
+            self.bejelentkezik(a, b)
+        self.driver.get(lokatorok.nyitolap)
+        time.sleep(2)
+        self.lapozogombok = self.driver.find_elements_by_xpath(lokatorok.cikk_oldalgombok)
+        self.cikkeim = []
+        for gomb in self.lapozogombok:  # Végigmegy a lapokon.
+            gomb.click()
+            time.sleep(2)
+            # Minden cikk div-je: article-preview
+            self.cikkek = self.driver.find_elements_by_xpath(lokatorok.cikk_cikkek)
+            for self.cikk in self.cikkek:
+                self.szovege = self.cikk.text
+                self.tulaj = self.szovege[0:self.szovege.find("\n")]
+                self.listaelem = []
+                if self.tulaj == "HarryPotter":
+                    #self.listaelem.append(self.tulaj)
+                    self.listaelem.append(self.cikk.find_element_by_tag_name("h1").text)
+                    self.listaelem.append(self.cikk.find_element_by_tag_name("p").text)
+                    #self.listaelem.append(cikk.find_element_by_xpath("//a[@class = 'tag-pill tag-default']").text)
+                    self.cikkeim.append(self.listaelem)
+        return self.cikkeim
 
     def kileptet(self):
         if vanlogout(self.driver):  # Kiléptet, ha van Logout.
             fejlecobjektumok(self.driver)["Logout"].click()
+
     def teardown(self):  # Lerombolás.
         self.driver.close()
