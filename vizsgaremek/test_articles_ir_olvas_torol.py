@@ -23,8 +23,16 @@ def test_articles_ir_olvas_torol():
         comment = hanyadik + ". comment"
         log = log and lap.add_article(title, about, write, tags, comment)
         time.sleep(2)
-    cikkeim = lap.sajat_cikkek_listaja(emil, password)
-    for i in range(hanycikk):
+    cikkeim_oldallal = lap.sajat_cikkek_listaja(emil, password)
+    hany_volt = len(cikkeim_oldallal)
+    cikkeim = []
+    for cikk in cikkeim_oldallal:
+        lista = []
+        lista.append(cikk[1])
+        lista.append(cikk[2])
+        cikkeim.append(lista)
+    print(cikkeim)
+    for i in range(hanycikk):  # Ellenőrzi a cikkek title és about jellemzőjét.
         hanyadik = str(i + 1)
         lista = []
         title = hanyadik + ". title"
@@ -32,9 +40,16 @@ def test_articles_ir_olvas_torol():
         lista.append(title)
         lista.append(about)
         log = log and lista in cikkeim
+    oldalszamok = []
+    for i in range(len(cikkeim_oldallal)):
+        oldalszamok.append(cikkeim_oldallal[i][0])
+    oldalszamok.sort()
+    # oldalszamok[0] Az első oldal, ahol cikkem van, ezek közül az elsőt törlöm.
+    lap.cikket_torol(name, int(oldalszamok[0]))
+    cikkeim_oldallal = lap.sajat_cikkek_listaja(emil, password)
+    hany_lett = len(cikkeim_oldallal)
+    log = log and hany_lett < hany_volt  # Kevesebb lett.
     lap.kileptet()
     lap.teardown()
-    return log
+    assert log
 
-
-assert test_articles_ir_olvas_torol()

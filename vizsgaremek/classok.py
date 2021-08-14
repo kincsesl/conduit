@@ -214,7 +214,7 @@ class Test_signup_settings(object):
 class Test_articles(object):
     def setup(self):
         self.options = Options()
-        self.options.headless = True
+        # self.options.headless = True
         self.driver = webdriver.Chrome(options=self.options)
 
     def regisztral(self, a, b, c):
@@ -237,7 +237,7 @@ class Test_articles(object):
 
     def bejelentkezik(self, a, b):
         self.driver.get(lokatorok.signinlap)
-        time.sleep(1)
+        time.sleep(2)
         self.emil = self.driver.find_element_by_xpath(lokatorok.signin_emil)
         self.password = self.driver.find_element_by_xpath(lokatorok.signin_password)
         self.submit = self.driver.find_element_by_xpath(lokatorok.signin_gomb)  # Sign in felirat.
@@ -276,8 +276,10 @@ class Test_articles(object):
         time.sleep(2)
         self.lapozogombok = self.driver.find_elements_by_xpath(lokatorok.cikk_oldalgombok)
         self.cikkeim = []
+        self.i = 0
         for gomb in self.lapozogombok:  # Végigmegy a lapokon.
             gomb.click()
+            self.i += 1
             time.sleep(2)
             # Minden cikk div-je: article-preview
             self.cikkek = self.driver.find_elements_by_xpath(lokatorok.cikk_cikkek)
@@ -286,12 +288,27 @@ class Test_articles(object):
                 self.tulaj = self.szovege[0:self.szovege.find("\n")]
                 self.listaelem = []
                 if self.tulaj == "HarryPotter":
-                    # self.listaelem.append(self.tulaj)
+                    self.listaelem.append(str(self.i))
                     self.listaelem.append(self.cikk.find_element_by_tag_name("h1").text)
                     self.listaelem.append(self.cikk.find_element_by_tag_name("p").text)
-                    # self.listaelem.append(cikk.find_element_by_xpath("//a[@class = 'tag-pill tag-default']").text)
                     self.cikkeim.append(self.listaelem)
         return self.cikkeim
+
+    def cikket_torol(self, nev, n):
+        self.driver.get(lokatorok.nyitolap)
+        time.sleep(2)
+        self.driver.find_elements_by_xpath(lokatorok.cikk_oldalgombok)[n - 1].click  # Rányom az n. oldalra.
+        self.cikkek = self.driver.find_elements_by_xpath(lokatorok.cikk_cikkek)
+        for self.cikk in self.cikkek:
+            self.szovege = self.cikk.text
+            self.tulaj = self.szovege[0:self.szovege.find("\n")]
+            if self.tulaj == "HarryPotter":  # Megtalálja az első saját cikket.
+                self.cikk.find_element_by_tag_name("h1").click()
+                time.sleep(3)
+                #Törli a cikket.
+                self.driver.find_element_by_xpath("//button[@class = 'btn btn-outline-danger btn-sm']").click()
+                self.driver.refresh() # A rossz üzit figyelmen kívül hagyja.
+                break  # Az első után abbahagyja.
 
     def kileptet(self):
         if vanlogout(self.driver):  # Kiléptet, ha van Logout.

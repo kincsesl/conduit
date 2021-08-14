@@ -69,3 +69,8 @@ cikk_homeglobal = "//div[@class = 'home-global']"  # A cikkgyűjtemény az adott
 cikk_cikkek = "//div[@class = 'article-preview']"
 cikk_sajatok = "//a[@href = '#/@HarryPotter/']"
 cikk_oldalgombok = "//a[@class = 'page-link']"  # A .text a gomb felirata.
+cikk_linkje = "//a[@class = 'preview-link']"
+
+# Cikk törlése
+cikk_torles = "/html/body/div[1]/div/div[1]/div/div/span/button"
+

@@ -4,7 +4,7 @@ test_nyitolinkek.py:
     test_2: Ide-oda kattint a Home, a SignIn és a SignUp linkekre, majd visszalép.
 
 test_signup_rosszak.py:
-    test_reg_mezok01-03: A megfelelő mező üreseh hagyásával nézi, hogy megjelenik-e a várt hiba.
+    test_reg_mezok01-03: A megfelelő mező üresen hagyásával nézi, hogy megjelenik-e a várt hiba.
     (A 04 ismétlődő eset volt.)
     test_reg_mezok05: A Password mező érvénytelen kitöltése után ellenőrzi a hibaüzenetet.
 
@@ -13,15 +13,28 @@ test_signup_jok.py:
                         belép, kiléptet.
 
 test_popular_tags_listazasa.py:
-    def test_popular_tags(): Érvényes adatokkal regisztrál, nézi, megjelenik-e a
+    test_popular_tags(): Érvényes adatokkal regisztrál, nézi, megjelenik-e a
                              sikeresregisztráció üzenete, belép, ellenőrzi, van-e legalább
                              2 Popular Tags, ezeket a populars.cs-be kiírja, kiléptet.
-
+test_settings_oda-vissza.py:
+    test_settings_mindenfele():
+                            Regisztrál egy adattal, amit a veletlen_adatok.csv 1. sorából vesz.
+                            Belép
+                            Átírja a nevet és a jelszót a Settingsben. Kilép
+                            Belép az új jelszóval
+                            Visszaírja a nevet és a jelszót
+                            Kilép
+                            Belép a régi adatokkal
+test_articles_ír_olvas_töröl.py
+    def test_articles_ir_olvas_torol():
+                              Regisztrál, belép. 10 cikket fölrak
+                              ellenőrzi a meglétüket a title és az about jellemzőikkel
+                              végigjárva a cikkek több lapos listáját.
 +Regisztráció
 +Bejelentkezés
 +Adatkezelési nyilatkozat használata
 +Adatok listázása
-Több oldalas lista bejárása
++Több oldalas lista bejárása
 +Új adat bevitel
 +Ismételt és sorozatos adatbevitel adatforrásból
 +Meglévő adat módosítása
