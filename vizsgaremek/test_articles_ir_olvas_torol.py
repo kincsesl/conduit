@@ -52,4 +52,3 @@ def test_articles_ir_olvas_torol():
     lap.kileptet()
     lap.teardown()
     assert log
-

@@ -214,7 +214,7 @@ class Test_signup_settings(object):
 class Test_articles(object):
     def setup(self):
         self.options = Options()
-        # self.options.headless = True
+        self.options.headless = True
         self.driver = webdriver.Chrome(options=self.options)
 
     def regisztral(self, a, b, c):
