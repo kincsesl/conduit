@@ -1,0 +1,101 @@
+[ {
+  "uid" : "7e7ff913edac2638",
+  "name" : "test_settings_mindenfele",
+  "time" : {
+    "start" : 1628954577725,
+    "stop" : 1628954607156,
+    "duration" : 29431
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e5a8d690c2fb1833",
+  "name" : "test_3",
+  "time" : {
+    "start" : 1628954535288,
+    "stop" : 1628954552175,
+    "duration" : 16887
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2332b1b1c4a8e2b1",
+  "name" : "test_articles_ir_olvas_torol",
+  "time" : {
+    "start" : 1628954449207,
+    "stop" : 1628954531590,
+    "duration" : 82383
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "409666646a6f1868",
+  "name" : "test_reg_mezok03",
+  "time" : {
+    "start" : 1628954658227,
+    "stop" : 1628954671256,
+    "duration" : 13029
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80d62b1bd488bbf6",
+  "name" : "test_reg_mezok01",
+  "time" : {
+    "start" : 1628954632578,
+    "stop" : 1628954645373,
+    "duration" : 12795
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70e1b168fe077b0f",
+  "name" : "test_popular_tags",
+  "time" : {
+    "start" : 1628954552179,
+    "stop" : 1628954577722,
+    "duration" : 25543
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "719981ab68c38f67",
+  "name" : "test_reg_mezok02",
+  "time" : {
+    "start" : 1628954645375,
+    "stop" : 1628954658224,
+    "duration" : 12849
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba34faeb91de9163",
+  "name" : "test_reg_mezok05",
+  "time" : {
+    "start" : 1628954671258,
+    "stop" : 1628954684218,
+    "duration" : 12960
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75f38b8bb01c7677",
+  "name" : "test_1",
+  "time" : {
+    "start" : 1628954531593,
+    "stop" : 1628954535285,
+    "duration" : 3692
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df1babf8c4edb9d",
+  "name" : "test_reg_mezok01",
+  "time" : {
+    "start" : 1628954607158,
+    "stop" : 1628954632575,
+    "duration" : 25417
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
