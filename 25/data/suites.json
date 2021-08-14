@@ -1,0 +1,163 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "vizsgaremek",
+    "children" : [ {
+      "name" : "test_articles_ir_olvas_torol",
+      "children" : [ {
+        "name" : "test_articles_ir_olvas_torol",
+        "uid" : "fad8fc11488c55e1",
+        "parentUid" : "767ec412d03bdda70f535a0a9e1bee3e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628953646866,
+          "stop" : 1628953650042,
+          "duration" : 3176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "767ec412d03bdda70f535a0a9e1bee3e"
+    }, {
+      "name" : "test_nyitolinkek",
+      "children" : [ {
+        "name" : "test_1",
+        "uid" : "565270563de0203b",
+        "parentUid" : "3f8b6be18caf214f509e24320b288dc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953650154,
+          "stop" : 1628953654210,
+          "duration" : 4056
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_3",
+        "uid" : "a965d81e180cc782",
+        "parentUid" : "3f8b6be18caf214f509e24320b288dc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953654213,
+          "stop" : 1628953671153,
+          "duration" : 16940
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3f8b6be18caf214f509e24320b288dc1"
+    }, {
+      "name" : "test_popular_tags_listazasa",
+      "children" : [ {
+        "name" : "test_popular_tags",
+        "uid" : "c2c8ff68bfacfad3",
+        "parentUid" : "de28bb4e3e38f80e618a0e480c8ca5de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953671156,
+          "stop" : 1628953697197,
+          "duration" : 26041
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "de28bb4e3e38f80e618a0e480c8ca5de"
+    }, {
+      "name" : "test_settings_oda-vissza",
+      "children" : [ {
+        "name" : "test_settings_mindenfele",
+        "uid" : "94a46538a2fd36fb",
+        "parentUid" : "a1e3a6b2537f0d6e8730585a5c6a28a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953697200,
+          "stop" : 1628953727236,
+          "duration" : 30036
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a1e3a6b2537f0d6e8730585a5c6a28a0"
+    }, {
+      "name" : "test_signup_jok",
+      "children" : [ {
+        "name" : "test_reg_mezok01",
+        "uid" : "e0d860f970fd1e1d",
+        "parentUid" : "f705dd2bb0cfb9c34b62c976091fcf2f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953727239,
+          "stop" : 1628953753113,
+          "duration" : 25874
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f705dd2bb0cfb9c34b62c976091fcf2f"
+    }, {
+      "name" : "test_signup_rosszak",
+      "children" : [ {
+        "name" : "test_reg_mezok01",
+        "uid" : "a15e28c074d9e2df",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953753116,
+          "stop" : 1628953766044,
+          "duration" : 12928
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_reg_mezok02",
+        "uid" : "9af662c72e508362",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953766047,
+          "stop" : 1628953779009,
+          "duration" : 12962
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_reg_mezok03",
+        "uid" : "4ff44b4cd4efdfbd",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953779012,
+          "stop" : 1628953792157,
+          "duration" : 13145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_reg_mezok05",
+        "uid" : "14c935b18520eff1",
+        "parentUid" : "f9dd2fba1a68c63f56e1fb846bf8b022",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953792160,
+          "stop" : 1628953805327,
+          "duration" : 13167
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f9dd2fba1a68c63f56e1fb846bf8b022"
+    } ],
+    "uid" : "cbd10818b8e0140de597780ddf104a7d"
+  } ],
+  "name" : "suites"
+}
