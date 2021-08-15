@@ -28,4 +28,3 @@ def test_settings_mindenfele():
     log = log and lap.bejelentkezik(b, c)  # Belép a régi adatokkal.
     assert log
 
-

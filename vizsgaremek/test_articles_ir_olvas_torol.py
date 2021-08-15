@@ -11,7 +11,7 @@ def test_articles_ir_olvas_torol():
     lap = classok.Test_articles()
     lap.setup()
     log = True
-    lap.regisztral(name, emil, password)
+    lap.regisztral(name, emil, password) # Ha megvan már a felhasználó, úgyis átugorja ezt nemes egyszerűséggel.
     log = log and lap.bejelentkezik(emil, password)  # Belép, és a New Article oldalra lép.
     lap.article_oldal()  # Rálép az Article oldalra.
     for i in range(hanycikk):

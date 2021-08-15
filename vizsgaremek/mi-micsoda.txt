@@ -36,8 +36,8 @@ test_articles_ír_olvas_töröl.py
 +Adatok listázása
 +Több oldalas lista bejárása
 +Új adat bevitel
-+Ismételt és sorozatos adatbevitel adatforrásból
+Ismételt és sorozatos adatbevitel adatforrásból
 +Meglévő adat módosítása
-Adat vagy adatok törlése
++Adat vagy adatok törlése
 +Adatok lementése felületről
 +Kijelentkezés
