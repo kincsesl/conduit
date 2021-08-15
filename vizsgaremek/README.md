@@ -1,4 +1,4 @@
-A tesztfájlok a viszgaremek mappában vannak:
+A tesztfájlok ebben a mappában vannak:
 
 test_nyitolinkek.py:
     (Nincs a POM-ban.)
