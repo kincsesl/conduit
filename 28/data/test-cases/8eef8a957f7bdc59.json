@@ -1,0 +1,199 @@
+{
+  "uid" : "8eef8a957f7bdc59",
+  "name" : "test_reg_mezok03",
+  "fullName" : "vizsgaremek.test_signup_rosszak#test_reg_mezok03",
+  "historyId" : "dcf422e265ef2e978eaea2b794043155",
+  "time" : {
+    "start" : 1629038976416,
+    "stop" : 1629038989235,
+    "duration" : 12819
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "vizsgaremek"
+  }, {
+    "name" : "suite",
+    "value" : "test_signup_rosszak"
+  }, {
+    "name" : "host",
+    "value" : "fv-az42-898"
+  }, {
+    "name" : "thread",
+    "value" : "3753-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "vizsgaremek.test_signup_rosszak"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 16,
+        "unknown" : 0,
+        "total" : 16
+      },
+      "items" : [ {
+        "uid" : "ed58bc6bf002386b",
+        "reportUrl" : "https://kincsesl.github.io/conduit/27//#testresult/ed58bc6bf002386b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629020235166,
+          "stop" : 1629020248252,
+          "duration" : 13086
+        }
+      }, {
+        "uid" : "409666646a6f1868",
+        "reportUrl" : "https://kincsesl.github.io/conduit/26//#testresult/409666646a6f1868",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628954658227,
+          "stop" : 1628954671256,
+          "duration" : 13029
+        }
+      }, {
+        "uid" : "4ff44b4cd4efdfbd",
+        "reportUrl" : "https://kincsesl.github.io/conduit/25//#testresult/4ff44b4cd4efdfbd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628953779012,
+          "stop" : 1628953792157,
+          "duration" : 13145
+        }
+      }, {
+        "uid" : "8b2009297b197fe7",
+        "reportUrl" : "https://kincsesl.github.io/conduit/24//#testresult/8b2009297b197fe7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628878870871,
+          "stop" : 1628878883624,
+          "duration" : 12753
+        }
+      }, {
+        "uid" : "305cfe98af706330",
+        "reportUrl" : "https://kincsesl.github.io/conduit/23//#testresult/305cfe98af706330",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628856131782,
+          "stop" : 1628856144899,
+          "duration" : 13117
+        }
+      }, {
+        "uid" : "c376c0f9d97447ca",
+        "reportUrl" : "https://kincsesl.github.io/conduit/22//#testresult/c376c0f9d97447ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628794976825,
+          "stop" : 1628794989716,
+          "duration" : 12891
+        }
+      }, {
+        "uid" : "76c8f909db9e0d42",
+        "reportUrl" : "https://kincsesl.github.io/conduit/21//#testresult/76c8f909db9e0d42",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628783653080,
+          "stop" : 1628783666106,
+          "duration" : 13026
+        }
+      }, {
+        "uid" : "17fa6b11c22a5b30",
+        "reportUrl" : "https://kincsesl.github.io/conduit/20//#testresult/17fa6b11c22a5b30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628782856452,
+          "stop" : 1628782869537,
+          "duration" : 13085
+        }
+      }, {
+        "uid" : "30b4cf81f725452a",
+        "reportUrl" : "https://kincsesl.github.io/conduit/19//#testresult/30b4cf81f725452a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628779796846,
+          "stop" : 1628779809908,
+          "duration" : 13062
+        }
+      }, {
+        "uid" : "e42c649ce68dc11b",
+        "reportUrl" : "https://kincsesl.github.io/conduit/16//#testresult/e42c649ce68dc11b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628692393801,
+          "stop" : 1628692402584,
+          "duration" : 8783
+        }
+      }, {
+        "uid" : "54a956889c2c87a2",
+        "reportUrl" : "https://kincsesl.github.io/conduit/15//#testresult/54a956889c2c87a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628690595706,
+          "stop" : 1628690604631,
+          "duration" : 8925
+        }
+      }, {
+        "uid" : "844f296855447eef",
+        "reportUrl" : "https://kincsesl.github.io/conduit/14//#testresult/844f296855447eef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628689195880,
+          "stop" : 1628689204809,
+          "duration" : 8929
+        }
+      }, {
+        "uid" : "24a362c7acf1ffd0",
+        "reportUrl" : "https://kincsesl.github.io/conduit/13//#testresult/24a362c7acf1ffd0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628686830956,
+          "stop" : 1628686839722,
+          "duration" : 8766
+        }
+      }, {
+        "uid" : "15cab3a286008c16",
+        "reportUrl" : "https://kincsesl.github.io/conduit/12//#testresult/15cab3a286008c16",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628277383728,
+          "stop" : 1628277392474,
+          "duration" : 8746
+        }
+      }, {
+        "uid" : "ffed5da728b8514b",
+        "reportUrl" : "https://kincsesl.github.io/conduit/11//#testresult/ffed5da728b8514b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628258071259,
+          "stop" : 1628258079989,
+          "duration" : 8730
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8eef8a957f7bdc59.json",
+  "parameterValues" : [ ]
+}
